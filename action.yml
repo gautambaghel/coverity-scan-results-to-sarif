@@ -1,0 +1,14 @@
+name: 'Convert Coverity scan results to SARIF'
+description: 'Convert the output results file from Coverity Scan results to a valid SARIF file'
+inputs:
+  pipeline-results-json:
+    description: 'location of the pipeline json result file'
+    required: true
+    default: 'results.json'
+  output-results-sarif:
+    description: 'the path to the SARIF file as an output of the transformation'
+    required: true
+    default: 'coverity-results.sarif'
+runs:
+  using: 'node12'
+  main: 'index.js'
