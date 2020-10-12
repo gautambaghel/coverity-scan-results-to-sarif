@@ -90,7 +90,11 @@ const convertPipelineResultFileToSarifFile = (inputFileName,outputFileName) => {
                         }
                     }
                 }
-                eventDescription = event.eventDescription
+                eventDescription = eventDescription.concat(event.eventDescription)
+            }
+            else if (event.tag == "remediation") {
+                eventDescription = eventDescription.concat("HELP: \n\n")
+                eventDescription = eventDescription.concat(event.eventDescription)
             }
         })
 
