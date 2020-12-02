@@ -72,7 +72,7 @@ jobs:
 
 ```
 
-## An example workflow for Polaris can be as following
+## An example workflow for Polaris can be as following (incremental only)
 
 ```
 
