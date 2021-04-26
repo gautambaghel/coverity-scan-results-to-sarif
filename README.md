@@ -6,6 +6,20 @@ This repository converts the output of the command "cov-format-errors --dir idir
 
 It should also work with Polaris as long as underlying SAST technology uses Coverity.
 
+
+## Example on how to run & test this Action locally
+
+```
+
+env INPUT_PIPELINE-RESULTS-JSON="coverity-results.json" INPUT_OUTPUT-RESULTS-SARIF="coverity-results-sarif.json" node index.js
+
+```
+
+where coverity-results.json -> results you get from coverity
+
+coverity-results-sarif.json -> name of the o/p sarif file 
+
+
 ## An example workflow for coverity can be as following
 
 ```
