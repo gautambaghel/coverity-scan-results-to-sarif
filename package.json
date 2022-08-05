@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/gautambaghel/coverity-scan-results-to-sarif#readme",
   "dependencies": {
-    "@actions/core": "^1.2.5",
+    "@actions/core": "^1.2.6",
     "@actions/github": "^4.0.0"
   }
 }
