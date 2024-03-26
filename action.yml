@@ -10,5 +10,5 @@ inputs:
     required: true
     default: 'coverity-results.sarif'
 runs:
-  using: 'node12'
+  using: 'node20'
   main: 'index.js'
